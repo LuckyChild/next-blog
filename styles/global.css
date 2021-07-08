@@ -17,6 +17,7 @@ body {
 a {
   color: #0070f3;
   text-decoration: none;
+  cursor: pointer;
 }
 
 a:hover {
@@ -26,4 +27,7 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
+}
+li{
+  list-style: none;
 }

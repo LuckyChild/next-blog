@@ -2,6 +2,7 @@
 
 import Head from 'next/head'
 import Link from 'next/link';
+import Image from 'next/image'
 import utilStyles from '../styles/utils.module.css'
 import styles from './layout.module.css'
 const name = "uncledragons";
@@ -18,7 +19,7 @@ export default function Layout({children, home}) {
         <header className={styles.header}>
             {home ? (
                 <>
-                    <img src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name}/>
+                    <Image src="/images/profile.jpg" className={`${styles.headerHomeImage} ${utilStyles.borderCircle}`} alt={name} width={150} height={150}/>
                     <h1 className={utilStyles.heading2Xl}>{name}</h1>
                 </>
             ) : (
